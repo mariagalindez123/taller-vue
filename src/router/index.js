@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-
+import Inicio from '../views/inicio.vue'
+import Sidebar from '../views/sidebar.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -9,6 +9,16 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/sidebar',
+    name: 'sidebar',
+    component: Sidebar
+  },
+  {
+    path: '/inicio',
+    name: 'inicio',
+    component: Inicio
   },
   {
     path: '/about',
